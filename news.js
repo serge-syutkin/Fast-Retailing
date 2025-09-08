@@ -46,13 +46,13 @@ let tl = gsap.timeline({
     trigger: ".horizontal-trigger",
     start: "top top",
     end: "bottom top",
-    scrub: true,            // без времени догонки
-    // pin: true,            // опционально, если нужно фиксировать секцию
-    // markers: true         // для проверки
+    scrub: true,            // smooth
+    // pin: true,            // optional, if need fix section
+    // markers: true         // checking
   }
 });
 
 tl.to(".section_news .list", {
   x: () => -moveDistance,
-  ease: "none"              // явно выключаем easing
+  ease: "none"              
 });
