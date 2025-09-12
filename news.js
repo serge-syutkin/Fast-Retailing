@@ -4,7 +4,7 @@ let horizontalSection = $(".section_news");
 let moveDistance;
 function calculateScroll() {
   // Desktop
-  let itemsInView = 1.4;
+  let itemsInView = 2.4;
   let scrollSpeed = 1.8;
 
   if (window.matchMedia("(max-width: 479px)").matches) {
